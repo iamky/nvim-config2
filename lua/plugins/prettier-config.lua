@@ -2,6 +2,7 @@ return {
 
   {
     "williamboman/mason.nvim",
+    lazy=true,
     opts = function(_, opts)
       table.insert(opts.ensure_installed, "prettier")
     end,

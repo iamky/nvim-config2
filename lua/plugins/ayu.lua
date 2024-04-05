@@ -1,6 +1,6 @@
 return {
   "iamky/nvim-custom-ayu",
-  lazy = true,
+  lazy = false,
   name = "ayu",
   priority = 1000,
   config = function()

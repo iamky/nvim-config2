@@ -1,7 +1,7 @@
 return {
   "christoomey/vim-tmux-navigator",
   event = "BufReadPre",
-  lazy = false,
+  lazy = true,
   cmd = {
     "TmuxNavigateLeft",
     "TmuxNavigateDown",

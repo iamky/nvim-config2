@@ -33,20 +33,22 @@ return {
   --     end
   --   end,
 
-  {
-    "neovim/nvim-lspconfig",
-    event = { "BufReadPre", "BufNewFile", "InsertLeave" },
-    dependencies = {
-      "hrsh7th/cmp-nvim-lsp",
-      { "antosha417/nvim-lsp-file-operations", config = true },
-    },
+  -- {
+  --   "neovim/nvim-lspconfig",
+  --   lazy=true,
+  --   event = { "BufReadPre", "BufNewFile", "InsertLeave" },
+  --   dependencies = {
+  --     "hrsh7th/cmp-nvim-lsp",
+  --     lazy=true,
+  --     { "antosha417/nvim-lsp-file-operations", config = true },
+  --   },
 
-    opts = {
-      servers = {
-        sourcekit = {
-          cmd = { "xcrun", "sourcekit-lsp" },
-        },
-      },
-    },
-  },
+  --   opts = {
+  --     servers = {
+  --       sourcekit = {
+  --         cmd = { "xcrun", "sourcekit-lsp" },
+  --       },
+  --     },
+  --   },
+  -- },
 }
