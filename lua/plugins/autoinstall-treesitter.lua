@@ -1,6 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  lazy=true,
+  --lazy=true,
   version = false, -- last release is way too old and doesn't work on Windows
   build = ":TSUpdate",
   event = { "LazyFile", "VeryLazy" },
